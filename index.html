@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画图</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="tools">
+            <ui>
+                <li class="pen active" id="pen"><img src="img/pen.svg" alt=""></li>
+                <li class="eraser" id="eraser"><img src="img/eraser.svg" alt=""></li>
+                <li class="clear" id="clear"><img src="img/brush.svg" alt=""></li>
+                <li class="save" id="save"><img src="img/picture.svg" alt=""></li>
+            </ui>
+        </div>
+        <div class="tools-options">
+            <ol class="line-color" id="line-color">
+                <li id="color1" color="#000000" class="active"></li>
+                <li id="color2" color="#FE4365"></li>
+                <li id="color3" color="#FB6602"></li>
+                <li id="color4" color="#F4D000"></li>
+                <li id="color5" color="#34ADAE"></li>
+                <li id="color6" color="#FD8F52"></li>
+                <li id="color7" color="#78932C"></li>
+                <li id="color8" color="#555555"></li>
+            </ol>
+            <ol class="line-weight" id="line-weight">
+                <li weight="10"></li>
+                <li weight="15" class="active"></li>
+                <li weight="20"></li>
+                <li weight="25"></li>
+            </ol>
+            <ol class="eraser-width" id="eraser-width">
+                <li id="eraser16" eraser="16">
+                    <img src="./img/eraser16.ico" alt="">
+                </li>
+                <li id="eraser32" eraser="32" class="active">
+                    <img src="./img/eraser32.ico" alt="">
+                </li>
+                <li id="eraser48" eraser="48">
+                    <img src="./img/eraser48.ico" alt="">
+                </li>
+                <li id="eraser64" eraser="64">
+                    <img src="./img/eraser64.ico" alt="">
+                </li>
+            </ol>
+        </div>
+        <canvas id="background"></canvas>
+        <canvas id="canvas"></canvas>
+    </div>
+    <!-- <script src="vue.js"></script> -->
+    <script src="js.js"></script>
+</body>
+
+</html>
